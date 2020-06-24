@@ -25,9 +25,9 @@ Try calling it a few times to see the color switch back and forth.
 Once you have it working in the console, write an event listener that will use this helper function to change the color of the header when a user clicks on it.
 
 **YOUR NOTES**
-```
-
-```
+1. find the header element('h1#header')
+2. addEventListener
+3. toggleColor(header)
 
 ## Deliverable 2: Create Player
 
@@ -42,9 +42,11 @@ Some things to keep in mind:
 - Once you have access to an input field, you still need to retrieve its *value* to see what the user entered in the form!
 
 **YOUR NOTES**
-```
-
-```
+1. Find #new-player-form
+2. .addEventListener (don't forget event.preventDefault())
+3. create const player
+4. reference to the previous render function
+5. reset()
 
 ## Deliverable 3: Like Button
 
@@ -53,6 +55,8 @@ Some things to keep in mind:
 You can decide if you'd like to use *event delegation* to handle this, or if you'd like to attach *individual event listeners* to each like button. Regardless of the approach you take, the like button feature should work for all players (including new players that get added when a user fills out the form).
 
 **YOUR NOTES**
-```
-
-```
+1. playerContainer.addListenerEvent
+2. condition -> if event.target matches the like-button
+3. find closest class (.player)
+4. check who was liked (.likes)
+5. parseInt, then see current likes
